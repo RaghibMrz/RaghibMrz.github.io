@@ -108,3 +108,14 @@ $(window).on('load', function() {
 		}, 100);
 		return false;
 	});
+
+function confettiFunction() {
+	confetti.start()
+	$.magnificPopup.open({
+        items: {
+            src: '<div class="clown-popup">🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br>Congratulations!<br>I hereby pronounce you chief clown of the entire cosmos<br>I warned you, but you didn\'t listen, what a clown you are, no, not a clown, you are the entire circus, nay the very concept of comedic public performers. <br> What? You really thought in big 2020 I learned PHP from scratch, processed a form and configured a whole server to send an email to myself when your lazy ass could just contact me on any of the social media provided. Smh. Do better.</div>',
+            type: 'inline'
+        }
+    });
+	setTimeout(function() {confetti.stop()}, 3000);
+}

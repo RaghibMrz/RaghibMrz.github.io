@@ -111,11 +111,34 @@ $(window).on('load', function() {
 
 function confettiFunction() {
 	confetti.start()
-	$.magnificPopup.open({
-        items: {
-            src: '<div class="clown-popup">🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br>Congratulations!<br>I hereby pronounce you chief clown of the entire cosmos<br>I even warned you fgs. <br>You are not a clown, you are the entire circus- nay the very concept of comedic public performers. <br> You really thought in big 2020 I went and learned PHP from scratch, processed a form and configured a whole server <strong>just</strong> to send an email from my own website to myself...<br> I mean I get we were in quarantine for a couple months but duuuuuuuuuude, who is trying to learn PHP<br> not to mention I have plastered about 47 different social media links all over this website so why dont you try to contact me like a normal person? Is it too much effort? Is that <strong>really</strong> too much to ask man, Im actually tired. Smh. Do better.</div>',
-            type: 'inline'
-        }
-    });
+	// $.magnificPopup.open({
+ //        items: {
+ //            src: '<div><img src="img/clown.png" alt=""></div><div class="clown-popup">🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br>Congratulations!<br>I hereby pronounce you chief clown of the entire cosmos<br>I even warned you fgs. <br>You are not a clown, you are the entire circus- nay the very concept of comedic public performers. <br> You really thought in big 2020 I went and learned PHP from scratch, processed a form and configured a whole server <strong>just</strong> to send an email from my own website to myself...<br> I mean I get we were in quarantine for a couple months but duuuuuuuuuude, who is trying to learn PHP<br> not to mention I have plastered about 47 different social media links all over this website so why dont you try to contact me like a normal person? Is it too much effort? Is that <strong>really</strong> too much to ask man, Im actually tired. Smh. Do better.</div>',
+ //            type: 'inline'
+ //        }
+ //    });
 	setTimeout(function() {confetti.stop()}, 5000);
 }
+
+(function( $ ) {
+
+    /*
+    Dialog with CSS animation
+    */
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
+	
+}).apply( this, [ jQuery ]);

@@ -565,6 +565,56 @@
 						    	</div>
 							</div>
 						</div>
+
+						<!-- instate -->
+						<div class="mix col-lg-4 col-md-6 personal">
+							<a id="instateatag" href="#instate" class="portfolio-item set-bg popup-with-zoom-anim">
+								<div class="pi-inner">
+									<h2>+ See Project</h2>
+								</div>
+							</a>
+
+							<div id="instate" class="dialog dialog-lg zoom-anim-dialog mfp-hide p-5" style="text-align: center;">
+								<h1 class="header-title mb-3">inState 🧑‍🏫</h1>
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 offset-2" style="text-align: left;">
+							               	<p>
+							               		<strong>Technologies used </strong>Quite a lot of technologies were used, all starred technologies are the ones that I worked with primarily:<br><br>
+						               		    *Framework: Django,<br>
+											    *Programming language: Python,<br>
+											    *Web server: Apache,<br>
+											    *Virtual Machine operating system: Ubuntu 18.04,<br>
+											    Front-End Framework: Bootstrap, *HTML, jQuery, Javascript, React <br>
+											    *Cloud service: Amazon Web Service (AWS), EC2,<br>
+											    *Database: PostgreSQL RDS on AWS,<br>
+											    Storage: S3 Buckets on AWS<br><br>
+
+							               		<strong>Description</strong><br>
+							               		In early April, when lockdown uncertainties were rife, I was approached by a friend about an idea to create a social mobility organisation for state-school students. The novelty in this particular initiative was that it was to be run completely by students, and not just any students but state-school students who understand the struggles and hurdles that people from non-selective schools have to go through.
+							               	</p>
+							               	<p>
+							               		This idea resonated with me greatly, as I attended a very poor performing state-school, with very little means of supporting me in my journey to university. I wanted this organisation to be very successful and really flourish, so I took on the role of the web design lead so that I can design a platform for this organisation to take off. Initially, I began with a simple website, using my web design skills and a rudimentary bootstrap template to make it responsive. However, if our goal was to make this organisation the best social mobility initiative we needed to do better and so I onboarded a computer science student to help me with an ambitious endeavour.
+							               	</p>
+							               	<p>
+							               		I began by migrating the existing website into a fully-fledged Django web application. This was so that I could do more with what we already had; and consequently, I coded in a log-in/sign up portal so that students who visit the website can create their own accounts and have some personalisation to the opportunities they see and the executive team of inState can also distinguish between different users of the application and see how it is being used.
+							               	</p>
+							               	<p>
+							               		I then spent a couple of weeks coding the main logic of the web app, with the dedicated opportunities portal which was a sophisticated data table, dynamically generating and then showing all the different opportunities that inState was offering. After this, and a basic front-end was completed, we migrated our local sqllite3 database to a PostgreSQL database on AWS, as well as setting up file storage "S3 Bucket" on AWS before pushing the whole project onto an EC2 instance (also on AWS).
+							               	</p>
+							               	<p>
+							               		Finally, I set up an apache2 webserver which, with WSGI deployed the Django web app onto the internet. I configured it to force HTTPS connectivity, and I used LetsEncrypt to give the website a secure SSL certificate. This was sufficient for our launch on the 16/09/2020 however making edits to the website was still very cumbersome so we implemented continuous integration to the git repository that we pushed our work to. This meant that all our changes were deployed automatically as soon as we pushed our work to git. This saved us a lot of manual work and made our overall experience a lot more efficient.
+							               	</p>
+							               	<hr>
+							               	<div style="text-align: center;">
+						               			<h3 class="mb-3">To view the website click the button</h3>
+						               			<a href="https://www.instate.org.uk" target="_blank" class="btn mr-4 mb-2"><span>the button</span></a>
+						               		</div>
+						             	</div> 
+							        </div>
+						    	</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

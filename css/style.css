@@ -1315,3 +1315,7 @@ ul.timeline > li:before {
   max-width: 500px;
   margin: 20px auto;
 }
+
+#instateatag {
+  background-image: url('../img/logo.png') !important;
+}

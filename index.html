@@ -729,47 +729,50 @@
 	        </div> -->
 	        <div class="row">
 	        	<div class="col-md-12">
-					<form class="contact-form mt-100">
+	        		<form class="contact-form mt-100" action="sendmail.php" method="POST">
 						<div class="row">
 							<div class="col-md-6">
-								<input type="text" placeholder="Name">
+								<input id="name" name="name" type="text" placeholder="Name">
 							</div>
 							<div class="col-md-6">
-								<input type="text" placeholder="E-mail">
+								<input id="email" name="email" type="text" placeholder="E-mail">
 							</div>
 							<div class="col-md-12">
-								<input type="text" placeholder="Subject">
+								<input id="subject" name="subject" type="text" placeholder="Subject">
 							</div>
 							<div class="col-md-12">
-								<textarea placeholder="Message"></textarea>
+								<textarea id="message" name="message" placeholder="Message"></textarea>
 							</div>
+
+
+							<!-- <div class="work-request--information">
+			                  <div class="information-name">
+			                    <input id="name" name="name" type="text" spellcheck="false">
+			                    <label for="name">Name</label>
+			                  </div>
+			                  <div class="information-email">
+			                    <input id="email" name ="email" type="email" spellcheck="false">
+			                    <label for="email">Email</label>
+			                  </div>
+			                </div>
+ -->
+
 						</div>
 						<div class="text-center">
-							<a href="#popup" onclick="confettiFunction()" class="btn popup-with-zoom-anim"><span>Send message</span></a>
-							<div id="popup" class="dialog dialog-lg zoom-anim-dialog mfp-hide p-5" style="text-align: center;">
-								<!-- <div class="row"> -->
-									<img src="img/clown.jpeg" width="240" height="180" align="right" style="padding: 1%" />
-									<p style="text-align: left;">
-										🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br>
-										Congratulations!<br>
-										I hereby pronounce you chief clown of the entire cosmos, I even warned you fgs. <br>
-										You are not a clown, you are the entire circus- nay the very concept of comedic public performers. <br>
-										You really thought in big 2020 I went and learned PHP from scratch, processed a form and configured a whole server <strong>just</strong> to send an email from my own website to myself...<br> 
-										I mean I get we were in quarantine for a couple months but duuuuuuuuuude, who is even trying to learn PHP these days, not to mention that I have literally plastered about 47 different social media links all over this website so why dont you try to contact me like a normal person? Is it too much effort? Is that <strong>really</strong> too much to ask for man, Im actually tired. I may be an insomniac but its people like you that make me struggle to sleep at night, I mean its hard enough to accept the futility of this fleeting existing, now I have the added burden of taking care of incompetent people on my fragile injury-prone shoulders (Thanks for the impingement!) Smh. Do better.
-									</p>
-									<!-- <div class="col-6">
-										🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br>
-										Congratulations!<br>
-										I hereby pronounce you chief clown of the entire cosmos, I even warned you fgs. <br>
-										You are not a clown, you are the entire circus- nay the very concept of comedic public performers. <br>
-										You really thought in big 2020 I went and learned PHP from scratch, processed a form and configured a whole server <strong>just</strong> to send an email from my own website to myself...<br> 
-										I mean I get we were in quarantine for a couple months but duuuuuuuuuude, who is even trying to learn PHP these days, not to mention that I have literally plastered about 47 different social media links all over this website so why dont you try to contact me like a normal person? Is it too much effort? Is that <strong>really</strong> too much to ask man, Im actually tired. Smh. Do better.
-									</div>
-									<div class="col-6">
-										<img src="img/clown.png" alt="">
-									</div> -->
-								<!-- </div> -->
-							</div>
+							<!-- <a href="#popup" onclick="confettiFunction()" class="btn popup-with-zoom-anim"><span>Send message</span></a> -->
+							<!-- <a class="btn" onclick="submitForm()"><span>Send message</span></a> -->
+							<button class="btn" type="submit">Send Mail</button>
+							<!-- <div id="popup" class="dialog dialog-lg zoom-anim-dialog mfp-hide p-5" style="text-align: center;">
+								<img src="img/clown.jpeg" width="240" height="180" align="right" style="padding: 1%" />
+								<p style="text-align: left;">
+									🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡🤡<br>
+									Congratulations!<br>
+									I hereby pronounce you chief clown of the entire cosmos, I even warned you fgs. <br>
+									You are not a clown, you are the entire circus- nay the very concept of comedic public performers. <br>
+									You really thought in big 2020 I went and learned PHP from scratch, processed a form and configured a whole server <strong>just</strong> to send an email from my own website to myself...<br> 
+									I mean I get we were in quarantine for a couple months but duuuuuuuuuude, who is even trying to learn PHP these days, not to mention that I have literally plastered about 47 different social media links all over this website so why dont you try to contact me like a normal person? Is it too much effort? Is that <strong>really</strong> too much to ask for man, Im actually tired. I may be an insomniac but its people like you that make me struggle to sleep at night, I mean its hard enough to accept the futility of this fleeting existing, now I have the added burden of taking care of incompetent people on my fragile injury-prone shoulders (Thanks for the impingement!) Smh. Do better.
+								</p>
+							</div> -->
 						</div>
 					</form>
 				</div>
